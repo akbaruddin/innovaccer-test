@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  api-app:
+    environment:
+      DEBUG: 'true'
+    command: 'npm run dev'

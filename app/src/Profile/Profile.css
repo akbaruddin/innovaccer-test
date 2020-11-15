@@ -1,0 +1,8 @@
+.larger {
+  height: var(--spacing-8) !important;
+  width: var(--spacing-8) !important;
+}
+
+.larger .Text {
+  font-size: 72px;
+}
