@@ -45,3 +45,7 @@ Run
 ```bash
 docker-compose up -d
 ```
+
+### DB
+
+Create DB `patients` and Collection `patients`
