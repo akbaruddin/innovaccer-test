@@ -1,3 +1,4 @@
+import React from 'react';
 import { Heading, Text } from '@innovaccer/design-system';
 import { Link } from "react-router-dom";
 

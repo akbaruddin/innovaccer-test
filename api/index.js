@@ -5,7 +5,7 @@ const app = express();
 
 require('dotenv').config()
 
-const patients = require('./patients');
+const patients = require('./src/patients');
 
 const port = process.env.PORT || 8080;
 

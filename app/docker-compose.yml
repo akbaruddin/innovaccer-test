@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  front-app:
+    container_name: front-app
+    build: .
+    volumes:
+      - .:/usr/app
+      - '/usr/app/node_modules'
+    ports: 
+      - "80:3000"

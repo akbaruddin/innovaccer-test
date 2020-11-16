@@ -1,15 +1,13 @@
-FROM node:latest
+FROM node:14.15.0
 
-RUN mkdir -p /usr/api
+WORKDIR /usr/src/app
 
-WORKDIR /usr/api
+COPY package*.json ./
 
-COPY package.json /usr/api
+RUN npm i && mv node_modules ../
 
-RUN yarn
-
-COPY . /usr/api
+COPY . .
 
 EXPOSE 8080
 
-CMD ["yarn", "start"]
+CMD ["npm", "run", "start"]
